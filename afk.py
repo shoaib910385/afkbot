@@ -19,7 +19,6 @@ api_id = int(os.getenv("API_ID"))
 api_hash = os.getenv("API_HASH")
 bot_token = os.getenv("BOT_TOKEN")
 admins = [int(x) for x in os.getenv("ADMINS", "").split(",") if x.strip()]
-chat_ids = [int(x) for x in os.getenv("CHAT_IDS", "").split(",") if x.strip()]
 
 # Configure logging
 logging.basicConfig(
